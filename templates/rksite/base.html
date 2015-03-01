@@ -1,47 +1,99 @@
 <!DOCTYPE html>
 {% load static %}
-<html>
-<head>
-    <title>RKSite</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
-</head>
+<html lang="en">
+    <head>
+        <title>raghavkumar.work</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/bootstrap-theme.min.css' %}" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
+        <!--For changing the 'active' class tag with jQuery-->
+        <link href="{% static 'css/rksite-gen.css' %}" rel="stylesheet">
+    </head>
 
-<body>
-    <div class="container">
-        <!--Static navbar-->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                            aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/home/">Raghav Kumar</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">About</a></li>
-                        <li><a href="/home/contact/">Contact</a></li>
-                    </ul>
-                </div> <!--/ .nav collapse -->
-            </div> <!--/ .container-fluid -->
-        </nav>
+    <body>
+        <div class="container">
+            <!--Static navbar-->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                                aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/home/">Raghav Kumar</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/home/contact/">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/home/projects/">Projects</a></li>
+                            <li><a href="/home/goals/">Future Goals</a></li>
+                        </ul>
+                    </div> <!--/ .nav collapse -->
+                </div> <!--/ .container-fluid -->
+            </nav>
 
-          <!-- Main component for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            {% block content %}{% endblock %}
+              <!-- Main component for a primary marketing message or call to action -->
+            <div id="cont" class="jumbotron">
+                {% block content %}{% endblock %}
+                <style>
+                    .img {
+                    position: relative;
+                    float: left;
+                    width:  500px;
+                    height: 380px;
+                    background-position: 50% 50%;
+                    background-repeat:   no-repeat;
+                    background-size:     cover;
+                    border-radius:      45px;
+                    }
+
+                    .img2 {
+                    position: relative;
+                    left: 300px;
+                    width:  400px;
+                    height: 400px;
+                    background-position: 50% 50%;
+                    background-repeat:   no-repeat;
+                    background-size:     cover;
+                    border-radius:      45px;
+                    }
+
+                    .fydp {
+                    position: relative;
+                    float: left;
+                    width:  963px;
+                    height: 698px;
+                    background-position: 50% 50%;
+                    background-repeat:   no-repeat;
+                    background-size:     cover;
+                    border-radius:      45px;
+                    }
+
+                    .outlier {
+                    position: relative;
+                    float: left;
+                    width: 500px;
+                    height: 703px;
+                    background-position: 50% 50%;
+                    background-repeat:   no-repeat;
+                    background-size:     cover;
+                    border-radius:      45px;
+                    }
+                </style>
+            </div>
         </div>
-    </div>
 
 
-    <script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-</body>
+        <script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/rksite-ajax.js' %}"></script>
+    </body>
 </html>

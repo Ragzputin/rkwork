@@ -1,0 +1,62 @@
+{% extends 'rksite/base.html' %}
+{% load static %}
+
+{% block title %}RaghavKumarProjects{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Projects</h1>
+    <div>
+        <h2>Premier League Soccer Countdown Timer</h2>
+        <p><b>Project date:</b> January 2015 - Present</p>
+        <p>I'm an avid soccer fan and follow the English Premier League quite religiously. So I decided
+        to create a countdown timer which tells me when the next Chelsea game is. So I set about constructing
+        this timer which retrieves data wirelessly from the internet and displays a countdown in days, hours, minutes
+         and seconds onto a 16x2 LCD.</p>
+        <table>
+            <tr>
+                <td><img class="img" src="{% static 'eplc_1.jpg' %}" style="height: 400px; PADDING-BOTTOM: 25px;PADDING-RIGHT: 25px"/></td>
+                <td><img class="img" src="{% static 'eplc_2.jpg' %}" style="height: 400px; PADDING-BOTTOM: 25px;PADDING-RIGHT: 25px"/></td>
+            </tr>
+
+        </table>
+        <img class="img" src="{% static 'eplc.jpg' %}" style="width: 980px; height: 760px; PADDING-BOTTOM: 25px"/>
+    </div>
+    <div>
+        <h2>Two player checkers in Python</h2>
+        <p><b>Project date:</b> September - December 2014</p>
+        <p>I learned a tremendous amount of Python in the past four months which I put to use by creating this
+        two player checkers game. I used Tkinter once again to build this bad boy. The checkerboard and pieces are
+        just shapes that I defined in Tkinter. The pieces are circles that have the drag option enabled. The
+        challenging part was defining the logic behind every move that was made by this so-called "dragging" of
+        pieces.</p>
+        <table>
+            <tr>
+                <td><img class="img" src="{% static 'checkers_2.png' %}" style="height:500px; PADDING-BOTTOM: 25px;PADDING-RIGHT: 25px"/></td>
+                <td><img class="img" src="{% static 'checkers_3.png' %}" style="height:500px; PADDING-BOTTOM: 25px;PADDING-RIGHT: 25px"/></td>
+            </tr>
+        </table>
+        <img class="img2" src="{% static 'Checkers.gif' %}" style="PADDING-BOTTOM: 25px"/>
+        <img class="img" src="{% static 'checkers.jpg' %}" style="width:1000px; height: 1700px; PADDING-BOTTOM: 25px"/>
+
+    </div>
+    <div>
+        <h2>Turn it Off!!! Power Management System</h2>
+        <p><b>Project date:</b> May 2013 - March 2014</p>
+        <p>This power management system was designed to reduce power consumption due to idle devices such as microwaves
+        and device chargers in the typical residential home. The Turn It Off!!! Power Management System reduced
+        power consumption of such devices by controlling power to each circuit at the source. This embedded system,
+        located at the service entrance to the residential home, provides complete control over individual circuits
+        via internet scheduling done through Google Calendar and relays installed after the branch circuit breakers.</p>
+        <table>
+            <tr>
+                <td><img class="fydp" src="{% static 'fydp1.png' %}" style="PADDING-BOTTOM: 25px;PADDING-RIGHT: 25px"/></td>
+            </tr>
+            <tr>
+                <td><img class="fydp" src="{% static 'fydp2.png' %}" style="PADDING-BOTTOM: 25px;PADDING-RIGHT: 25px"/></td>
+            </tr>
+        </table>
+    </div>
+</div>
+{% endblock %}

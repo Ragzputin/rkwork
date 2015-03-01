@@ -3,4 +3,18 @@
 {% block title %}RaghavKumarContact{% endblock %}
 
 {% block content %}
+<h1>Contact Me</h1>
+<br />
+<form class="span6" id="email_form" method="POST" action="/home/contact/">
+{% csrf_token %}
+{% for field in form.visible_fields %}
+        {{ field.errors }}
+        {{ field.help_text }}
+        <br/>
+        <p style="PADDING-BOTTOM: 1px">{{ field }}</p>
+        <br/>
+{% endfor %}
+<br />
+<button class="btn btn-primary" type="submit" name="send">Send</button>
+</form>
 {% endblock %}

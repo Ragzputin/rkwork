@@ -5,5 +5,33 @@
 
 {% block content %}
 <h1>Who is Raghav Kumar?</h1>
-<p>{{ summary }}</p>
+<div class="container">
+    <h2>Raghav Kumar is a lot of things.</h2>
+    <table style="width:100%">
+        <tr>
+            <td><img class="img" src="{% static 'online_8.jpg' %}" style="PADDING-BOTTOM: 10px;PADDING-RIGHT: 25px"/></td>
+            <td><p>Sometimes he is simply a selfie in a car...</p></td>
+        </tr>
+        <tr>
+            <td><img class="img" src="{% static 'online_12.jpg' %}" style="PADDING-BOTTOM: 10px;PADDING-RIGHT: 25px"/></td>
+            <td><p>Sometimes you'll find him with a guitar...</p></td>
+        </tr>
+        <tr>
+            <td><img class="img" src="{% static 'mexico.jpg' %}" style="PADDING-BOTTOM: 10px;PADDING-RIGHT: 25px"/></td>
+            <td>
+                <p>And every now and then he stays at a place like this...nice right?</p>
+                <p>But only sometimes. Even Mexico can get expensive!</p>
+            </td>
+        </tr>
+        <tr>
+            <td><img class="outlier" src="{% static 'grad_pic2.jpg' %}" style="PADDING-BOTTOM: 10px;PADDING-RIGHT: 25px"/></td>
+            <td>
+                <p>Besides all these shenanigans, Raghav Kumar is a recent alumnus of the <b>University
+                   of Waterloo</b>. That's pretty cool too right?</p>
+                <p>Look at that smile and thumbs up. This guy deserves an interview.</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
 {% endblock %}
